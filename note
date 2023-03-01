@@ -1,0 +1,40 @@
+syntax
+function descriptor=open("filename","mode")
+func descriptor or file descriptor
+eg:
+	f=open("name.txt","r")
+3 types of mode:
+	read(r),write(w),append(a)
+append means write balance
+write means overwrite
+
+for file in another folder:
+	open("give full path","mode")
+
+to view our path:
+	type pwd
+
+/->it is a path opener
+
+to create a new file:
+	if it doesn't exist also:
+		f=open("name.txt","w")
+	if there is content,it will overwrite
+
+to close file:
+	f.close()
+
+to read:
+	f.open("name.txt","r")
+	s=f.read()
+	print(s)
+	f.close()
+to append:
+	
+	f.open("name.txt","a")
+	m="hello"
+	f.write(m)
+	f.close()
+		this will write "hello" as balance of previous text
+
+

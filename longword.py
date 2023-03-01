@@ -1,0 +1,5 @@
+print("length of longest word")
+a=input("Enter a string\n")
+x=a.split()
+y=(max(x,key=len))
+print(y,"=",len(y))
